@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme colors here -->
+        <item name="colorPrimary">#29B6F6</item> <!-- Light Blue -->
+        <item name="colorPrimaryDark">#0288D1</item>
+        <item name="colorAccent">#E53935</item> <!-- Red Accent -->
+        <item name="android:textColorPrimary">#212121</item> <!-- Primary Text -->
+        <item name="android:windowBackground">#FFFFFF</item> <!-- White Background -->
+    </style>
+
+    <!-- Label style for bill info -->
+    <style name="BillLabel">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#757575</item> <!-- Medium gray -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <!-- Value style for bill info -->
+    <style name="BillValue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#212121</item> <!-- Darker gray/almost black -->
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+</resources>
