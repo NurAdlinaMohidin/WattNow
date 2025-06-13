@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,8 +40,11 @@ public class ResultActivity extends AppCompatActivity {
         textDetailSavings = findViewById(R.id.textDetailSavings);
         textDetailCost = findViewById(R.id.textDetailCost);
 
+        ImageButton buttonBack = findViewById(R.id.buttonBack);
         buttonUpdate = findViewById(R.id.buttonUpdate);
         buttonDelete = findViewById(R.id.buttonDelete);
+
+        buttonBack.setOnClickListener(v -> finish());
 
         // Handle missing or invalid bill ID
         if (billId == -1) {

@@ -1,6 +1,9 @@
 package com.example.wattnow;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
@@ -23,8 +26,16 @@ public class AboutActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Back button functionality to return to the previous screen
+        // Back button functionality
         ImageButton buttonBack = findViewById(R.id.buttonBack);
         buttonBack.setOnClickListener(v -> finish());
+
+        // GitHub button functionality
+        Button githubButton = findViewById(R.id.githubButton);
+        githubButton.setOnClickListener(v -> {
+            String url = "https://github.com/NurAdlinaMohidin/WattNow.git";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+        });
     }
 }
