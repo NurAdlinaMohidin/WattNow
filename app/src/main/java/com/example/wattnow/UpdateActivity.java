@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -33,8 +34,11 @@ public class UpdateActivity extends AppCompatActivity {
         editTextUnit = findViewById(R.id.editTextUnit);
         radioGroupRebate = findViewById(R.id.radioGroupRebate);
         buttonCalculate = findViewById(R.id.buttonCalculateBill);
+        ImageButton buttonBack = findViewById(R.id.buttonBack);
 
         database = new Database(this);
+
+        buttonBack.setOnClickListener(v -> finish());
 
         // Get bill ID passed from previous screen
         Intent intent = getIntent();
