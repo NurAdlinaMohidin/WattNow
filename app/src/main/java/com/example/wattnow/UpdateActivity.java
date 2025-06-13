@@ -28,7 +28,7 @@ public class UpdateActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_update); // make sure your layout exists and is correct
+        setContentView(R.layout.activity_update);
 
         spinnerMonth = findViewById(R.id.spinnerMonth);
         editTextUnit = findViewById(R.id.editTextUnit);
